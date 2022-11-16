@@ -6,11 +6,11 @@
   --header-height: 3rem;
 
   /*===== Colors =====*/
-  --first-color: #3e0e12;
-  --first-color-dark: #2f0a0d;
-  --text-color: #524748;
-  --first-color-light: #7b6f71;
-  --first-color-lighten: #fbf9f9;
+  --first-color: #09f;
+  --first-color-dark: #1c5480;
+  --text-color: #2354ab;
+  --first-color-light: #bbd3fb;
+  --first-color-lighten: #e5f3fd;
 
   /*===== Font and typography =====*/
   --body-font: 'Poppins', sans-serif;
@@ -143,7 +143,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #000;
+  background-color: #09f;
 }
 
 /*===== NAV =====*/
@@ -162,7 +162,7 @@ img {
     width: 100%;
     padding-top: 1.5rem;
     text-align: center;
-    background-color: #000;
+    background-color: #0bf;
     transition: 0.4s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
@@ -260,7 +260,7 @@ img {
 
 /*===== HOME =====*/
 .home {
-  background-color: #000;
+  background-color: var(--first-color-lighten);
   overflow: hidden;
 }
 
@@ -274,7 +274,7 @@ img {
 
 .home__data {
   border-left: 4px solid var(--first-color-lighten);
-  color: var(--first-color-lighten);
+  color: var(--first-color);
   padding-left: 1.5rem;
   z-index: var(--z-tooltip);
 }
@@ -306,6 +306,8 @@ img {
 
 .home__img img {
   width: 240px;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .home__social {
@@ -317,7 +319,7 @@ img {
   width: max-content;
   font-size: 1.3rem;
   margin-bottom: var(--mb-2);
-  color: var(--first-color-lighten);
+  color: var(--first-color);
 }
 
 .home__social-icon:hover {
